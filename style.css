@@ -1,202 +1,197 @@
-*{
-	  box-sizing: border-box;
-	margin:0;
-	padding:0;
-	font-family:sans-serif;
-	
+/* Universal selector for box-sizing, margin, padding, and font-family */
+* {
+    box-sizing: border-box;  /* Includes padding and border in the element's total width and height */
+    margin: 0;               /* Resets default margin for all elements */
+    padding: 0;              /* Resets default padding for all elements */
+    font-family: sans-serif;  /* Sets the default font for the document */
 }
 
-
-header{
-	position:relative;
-	color:white;
-	font-size:15px;
-	font-weight:bold;
-	font-family: Helvetica;
-	background-color:black;
-	height:50px;
-	
-	
-	top:0px;
-
-
-}
-h1{
-	padding-top:8px;
-	width:65%;
-
-	margin:0 auto;
+/* Header styles */
+header {
+    position: relative;        /* Allows for absolute positioning of child elements if necessary */
+    color: white;              /* Text color for the header */
+    font-size: 15px;          /* Font size for header text */
+    font-weight: bold;        /* Makes header text bold */
+    font-family: Helvetica;    /* Sets font for header */
+    background-color: black;  /* Background color of the header */
+    height: 50px;             /* Fixed height for the header */
+    top: 0px;                 /* Positions the header at the top of the page */
 }
 
-h2{
-	font-family: Helvetica;
-	font-size:50px;
-	font-weight:bold;
-
-	padding-bottom:20px;
-	margin:0 auto;
-	
-	
-	color:white;
-}
-article{
-	width:1000px;
-
-	margin:0 auto;
-}
-#article1{
-	
-	background-color:rgb(29, 112, 184);
-	color:white;
-	height:100%;
-	padding:50px 0px;
-	
-}
-#article2{
-	
-	background-color:#f3f2f1;
-	color:white;
-	height:100%;
-	padding:50px 0px;
-	
+/* Main title styling */
+h1 {
+    padding-top: 8px;         /* Space above the header */
+    width: 65%;               /* Width of the header title */
+    margin: 0 auto;           /* Centers the header title */
 }
 
-#article3{
-	
-	background-color:white;
-	color:black;
-	height:100%;
-	padding:50px 0px;
-	
-}
-#article4{
-	
-	background-color:white;
-	color:black;
-	height:100%;
-	padding:50px 0px;
-	
-}
-#article2 p{
-	
-}
-	
-
-
-#frames{
-	
-	background-color:lightcoral;
-}
-#paint{
-	
-	background-color:skyblue;
-}
-a{
-	font-family: Helvetica;
-	font-weight:bold;
-	color:blue;
-	
+/* Subheading styling */
+h2 {
+    font-family: Helvetica;    /* Sets font for subheadings */
+    font-size: 50px;          /* Font size for subheadings */
+    font-weight: bold;        /* Makes subheading text bold */
+    padding-bottom: 20px;     /* Space below the subheading */
+    margin: 0 auto;           /* Centers the subheading */
+    color: white;             /* Text color for subheadings */
 }
 
-p{
-	font-size:18px;
-	font-family:sans-serif;
-	line-height:35px;
-	width:100%;
-	margin:0 auto;
-	
-}
-h3{
-	color:black;
-	
-	padding-bottom:10px;
-	margin:0 auto;
-	font-size:22px;
-}
-a{
-	color:rgb(29, 112, 184);
+/* Article styles */
+article {
+    width: 1000px;            /* Fixed width for articles */
+    margin: 0 auto;           /* Centers articles within their container */
 }
 
-h4{
-
-	text-decoration:underline rgb(29, 112, 184) ;
-	
-	margin:0 auto;
-	font-size:18px;
-	
-}
-.category{
-	display:inline-block;
-	width:33%;
-	height:100%;
-	border-top:0.5px solid gray;
-	
-	padding:30px 10px;
-	
+/* Background and color settings for article sections */
+#article1 {
+    background-color: rgb(29, 112, 184); /* Light blue background */
+    color: white;                       /* Text color for article 1 */
+    height: 100%;                      /* Full height */
+    padding: 50px 0px;                /* Vertical padding */
 }
 
-
-.category2{
-	display:inline-block;
-	margin-top:10px;
-	width:45%;
-	height:100%;
-	border-top:0.5px solid gray;
-	
-	padding:10px 1px;
-	
-}
-.category2 h4{
-	font-size:17px;
-}
-.left-side{
-	display:inline-block;
-	width:70%;
-	border-top:2px solid black;
-	padding-top:10px;
-	
-	
-	
+#article2 {
+    background-color: #f3f2f1;        /* Light gray background */
+    color: white;                     /* Text color for article 2 */
+    height: 100%;                     /* Full height */
+    padding: 50px 0px;               /* Vertical padding */
 }
 
-.right-side{
-	display:inline-block;
-	width:25%;
-	border-top:2px solid black;
-		padding-top:10px;
-	
-	height:100%
+#article3 {
+    background-color: white;          /* White background for article 3 */
+    color: black;                     /* Text color for article 3 */
+    height: 100%;                     /* Full height */
+    padding: 50px 0px;               /* Vertical padding */
 }
 
-.right-side h4{
-	font-size:5rem;
-	font-weight:700;
-	text-decoration:none;
+#article4 {
+    background-color: white;          /* White background for article 4 */
+    color: black;                     /* Text color for article 4 */
+    height: 100%;                     /* Full height */
+    padding: 50px 0px;               /* Vertical padding */
 }
 
-span{
-	color:rgb(29, 112, 184) ;
-	text-decoration:underline rgb(29, 112, 184) ;
+/* Paragraph styles within article 2 */
+#article2 p {
+    /* Add specific styles if needed */
 }
 
-.formbit-left{
-	display:inline-block;
-	width:45%;
-	
-		padding-top:10px;
-	
-	height:100%
-}
-.formbit-right{
-	display:inline-block;
-	width:45%;
-	
-		padding-top:10px;
-	
-	height:100%
+/* Additional section styling (not used in current markup) */
+#frames {
+    background-color: lightcoral;     /* Background color for frames */
 }
 
-input{
-	width:100%;
-	height:40px;
+#paint {
+    background-color: skyblue;        /* Background color for paint section */
+}
+
+/* Anchor (link) styling */
+a {
+    font-family: Helvetica;            /* Sets font for links */
+    font-weight: bold;                 /* Makes link text bold */
+    color: blue;                       /* Default link color */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px;                  /* Font size for paragraphs */
+    font-family: sans-serif;           /* Sets font for paragraphs */
+    line-height: 35px;                /* Space between lines */
+    width: 100%;                      /* Full width */
+    margin: 0 auto;                   /* Centers paragraph */
+}
+
+/* Heading 3 styling */
+h3 {
+    color: black;                      /* Text color for h3 headings */
+    padding-bottom: 10px;             /* Space below the heading */
+    margin: 0 auto;                   /* Centers the heading */
+    font-size: 22px;                  /* Font size for h3 headings */
+}
+
+/* Link styling */
+a {
+    color: rgb(29, 112, 184);         /* Color for links */
+}
+
+/* Heading 4 styling */
+h4 {
+    text-decoration: underline rgb(29, 112, 184); /* Underline styling for h4 */
+    margin: 0 auto;                   /* Centers the heading */
+    font-size: 18px;                  /* Font size for h4 headings */
+}
+
+/* Category styles for sections */
+.category {
+    display: inline-block;             /* Allows categories to be displayed side by side */
+    width: 33%;                       /* Width of each category */
+    height: 100%;                     /* Full height */
+    border-top: 0.5px solid gray;    /* Top border for categories */
+    padding: 30px 10px;              /* Padding inside categories */
+}
+
+/* Secondary category styling */
+.category2 {
+    display: inline-block;             /* Allows secondary categories to be displayed side by side */
+    margin-top: 10px;                 /* Space above the category */
+    width: 45%;                       /* Width of each category */
+    height: 100%;                     /* Full height */
+    border-top: 0.5px solid gray;    /* Top border for categories */
+    padding: 10px 1px;               /* Padding inside secondary categories */
+}
+
+/* Specific styles for h4 within category2 */
+.category2 h4 {
+    font-size: 17px;                  /* Font size for h4 headings in category2 */
+}
+
+/* Left side layout styling */
+.left-side {
+    display: inline-block;             /* Allows left side content to be displayed inline */
+    width: 70%;                       /* Width of the left side */
+    border-top: 2px solid black;     /* Top border for the left side */
+    padding-top: 10px;               /* Padding above content */
+}
+
+/* Right side layout styling */
+.right-side {
+    display: inline-block;             /* Allows right side content to be displayed inline */
+    width: 25%;                       /* Width of the right side */
+    border-top: 2px solid black;     /* Top border for the right side */
+    padding-top: 10px;               /* Padding above content */
+    height: 100%;                     /* Full height */
+}
+
+/* Heading styling for the right side */
+.right-side h4 {
+    font-size: 5rem;                 /* Large font size for h4 headings in right side */
+    font-weight: 700;                /* Bold font weight */
+    text-decoration: none;            /* No text decoration */
+}
+
+/* Span styling */
+span {
+    color: rgb(29, 112, 184);        /* Color for spans */
+    text-decoration: underline rgb(29, 112, 184); /* Underline for spans */
+}
+
+/* Form bit left styling */
+.formbit-left {
+    display: inline-block;             /* Allows left form section to be displayed inline */
+    width: 45%;                       /* Width of the left form section */
+    padding-top: 10px;               /* Padding above content */
+    height: 100%;                     /* Full height */
+}
+
+/* Form bit right styling */
+.formbit-right {
+    display: inline-block;             /* Allows right form section to be displayed inline */
+    width: 45%;                       /* Width of the right form section */
+    padding-top: 10px;               /* Padding above content */
+    height: 100%;                     /* Full height */
+}
+
+/* Input field styling */
+input {
+    width: 100%;                     /* Full width of input fields */
+    height: 40px;                    /* Fixed height for input fields */
 }
