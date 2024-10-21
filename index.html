@@ -1,160 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <!-- Link to an external CSS file for styling -->
+    <!-- Required meta tags for responsive design -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <title>GOV.UK</title>
 </head>
+
 <body>
-<header>
-    <!-- Main header of the page -->
-    <h1>GOV.UK</h1>
-</header>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="text-center">GOV.UK</h1>
+        </div>
+    </header>
 
-<main>
-    <!-- First article section -->
-    <section id="article1">
-        <article>
-            <h2>
-                Welcome to GOV.UK
-            </h2>
-        </article>
-        
-        <article>
-            <!-- Paragraph with important message -->
-            <p>The best place to find government services and information</p>
-            <strong>Simpler, clearer, faster</strong> <!-- Strong emphasis on the message -->
-        </article>
-    </section>
+    <main class="container my-5">
+        <!-- First article section -->
+        <section id="article1" class="bg-primary text-white py-5">
+            <h2 class="text-center">Welcome to GOV.UK</h2>
+            <p class="text-center">The best place to find government services and information</p>
+            <strong class="d-block text-center">Simpler, clearer, faster</strong>
+        </section>
 
-    <!-- Second article section -->
-    <section id="article2">
-        <article>
-            <div class="formbit-left">
-                <h3>
-                    Popular on GOV.UK
-                </h3>
-                <!-- List of popular links -->
-                <p><a>Get support with the cost of living</a></p>
-                <p><a>Find out about help you can get with your energy bills</a></p>
-                <p><a>Find a job</a></p>
-                <p><a>Universal Credit account: sign in</a></p>
-                <p><a>Check your National Insurance record</a></p>
-            </div>
+        <!-- Second article section -->
+        <section id="article2" class="bg-light py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Popular on GOV.UK</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Get support with the cost of living</a></li>
+                        <li><a href="#">Find out about help you can get with your energy bills</a></li>
+                        <li><a href="#">Find a job</a></li>
+                        <li><a href="#">Universal Credit account: sign in</a></li>
+                        <li><a href="#">Check your National Insurance record</a></li>
+                    </ul>
+                </div>
 
-            <div class="formbit-right">
-                <h3>Search</h3>
-                <!-- Search form -->
-                <form action="/action_page.php">
-                    <input type="text" name="search"> <!-- Input field for search -->
-                    <button type="submit"><i class="fa fa-search"></i></button> <!-- Submit button with search icon -->
-                </form>
-                <br>
-                <!-- Extra spacing for layout -->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <div class="col-md-6">
+                    <h3>Search</h3>
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="search" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </div>
             </div>
-        </article>
-    </section>
+        </section>
 
-    <!-- Third article section -->
-    <section id="article3">
-        <article>
-            <h3>
-                Topics
-            </h3>
-            <!-- Categories of topics available -->
-            <div class="category">
-                <h4><a>Benefits</a></h4>
-                <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
-            </div>
-            <div class="category">
-                <h4><a>Births, deaths, marriages and care</a></h4>
-                <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-            </div>
-            <!-- Repeated categories for demonstration -->
-            <div class="category">
-                <h4><a>Find a job</a></h4>
-                <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-            </div>
-            <div class="category">
-                <h4><a>Benefits</a></h4>
-                <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
-            </div>
-            <div class="category">
-                <h4><a>Births, deaths, marriages and care</a></h4>
-                <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-            </div>
-            <div class="category">
-                <h4><a>Find a job</a></h4>
-                <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-            </div>
-            <div class="category">
-                <h4><a>Benefits</a></h4>
-                <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
-            </div>
-            <div class="category">
-                <h4><a>Births, deaths, marriages and care</a></h4>
-                <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-            </div>
-            <div class="category">
-                <h4><a>Find a job</a></h4>
-                <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-            </div>
-        </article>
-    </section>
-
-    <!-- Fourth article section -->
-    <section id="article4">
-        <article>
-            <div class="left-side">
-                <h3>Government Activity</h3>
-                <p>Find out what the government is doing</p><br>
-                <!-- Repeated categories for demonstration -->
-                <div class="category2">
-                    <h4><a>Benefits</a></h4>
+        <!-- Third article section -->
+        <section id="article3" class="bg-white py-5">
+            <h3>Topics</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4><a href="#">Benefits</a></h4>
                     <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
                 </div>
-                <div class="category2">
-                    <h4><a>Births, deaths, marriages and care</a></h4>
+                <div class="col-md-4">
+                    <h4><a href="#">Births, deaths, marriages and care</a></h4>
                     <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
                 </div>
-                <div class="category2">
-                    <h4><a>Benefits</a></h4>
-                    <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
-                </div>
-                <div class="category2">
-                    <h4><a>Births, deaths, marriages and care</a></h4>
-                    <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
-                </div>
-                <div class="category2">
-                    <h4><a>Benefits</a></h4>
-                    <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
-                </div>
-                <div class="category2">
-                    <h4><a>Births, deaths, marriages and care</a></h4>
-                    <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+                <div class="col-md-4">
+                    <h4><a href="#">Find a job</a></h4>
+                    <p>Job opportunities and resources available.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="right-side">
-                <div>
+        <!-- Fourth article section -->
+        <section id="article4" class="bg-white py-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Government Activity</h3>
+                    <p>Find out what the government is doing</p>
+                    <div class="category">
+                        <h4><a href="#">Benefits</a></h4>
+                        <p>Includes eligibility, appeals, tax credits and Universal Credits</p>
+                    </div>
+                    <div class="category">
+                        <h4><a href="#">Births, deaths, marriages and care</a></h4>
+                        <p>Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
                     <h3>Departments and organisations</h3>
-                    <h4><a>24</a></h4>
+                    <h4><a href="#">24</a></h4>
                     <p><span>Ministerial departments</span></p>
-                </div>
-
-                <div>
-                    <h4><a>400+</a></h4>
+                    <h4><a href="#">400+</a></h4>
                     <p><span>other agencies and public bodies</span></p>
                 </div>
             </div>
-        </article>
-    </section>
-</main>
+        </section>
+    </main>
 
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
